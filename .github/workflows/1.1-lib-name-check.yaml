@@ -1,0 +1,28 @@
+name: lib-name-check
+
+on:
+  push:
+    branches: [develop, main]
+  pull_request:
+    branches: [develop, main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate package.json name matches folder (sfai-code-#001)
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="sfai-web-library-consumer--bar/lib"
+          [ -d "$base" ] || { echo "::notice::No '$base' dir, skipping"; exit 0; }
+          shopt -s nullglob
+          for pkg in "$base"/*/package.json; do
+            dir="$(dirname "$pkg")"
+            echo "Checking $dir"
+            pushd "$dir" >/dev/null
+            test "$(jq -r .name package.json)" = "$(basename "$PWD" | tr '_' '-')" && echo "name OK" || { echo "name BAD"; exit 1; }
+            popd >/dev/null
+          done
