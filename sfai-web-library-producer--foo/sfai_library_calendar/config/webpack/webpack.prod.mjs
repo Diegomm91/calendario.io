@@ -48,10 +48,10 @@ const config = merge(commonConfig, {
     library: path.resolve(absRootPathLibrary, 'public/index.tsx')
   },
   output: {
-    filename: 'sfai-library-foo--[contenthash]--prod.bundle.js',
+    filename: 'sfai-library-calendar--[contenthash]--prod.bundle.js',
     path: path.resolve(absRootPathLibrary, 'dist/prod'),
     publicPath: '/',
-    library: 'SFAI_Library_Foo',
+    library: 'SFAI_Library_calendar',
     libraryTarget: 'umd', // Formato de la librería (opcional)
     globalObject: 'this', // Objeto global para UMD (opcional)
     clean: true,

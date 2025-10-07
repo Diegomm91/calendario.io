@@ -72,7 +72,7 @@ export default {
     mode: 'none',
     entry: {
     }, output: {
-        path: path.resolve(absRootPathLibrary, 'dist/sfai_library_foo'),
+        path: path.resolve(absRootPathLibrary, 'dist/sfai_library_calendar'),
         clean: true
     }, 
     module: { rules: sharedConfig.moduleRules }, 
@@ -85,9 +85,9 @@ export default {
         // Generar package.json en dist
         new GeneratePackageJsonPlugin(
             {
-                name: "sfai-library-foo",
+                name: "sfai-library-calendar",
                 version: "1.0.6",
-                description: "SFAI Library Foo",
+                description: "SFAI Library calendar",
                 main: "public/index.js",
                 types: "public/index.d.ts",
                 type: "module",

@@ -1,0 +1,98 @@
+.calendar-page-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Espacio entre el calendario y la lista de tareas */
+  padding: 20px;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+  background-color: #030f1b; /* Fondo general negro azulado más oscuro */
+}
+
+/* Estilos para pantallas de escritorio (ancho > 1024px) */
+@media (min-width: 1024px) {
+  .calendar-page-container {
+    flex-direction: row; /* Horizontal */
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}
+
+/* Estilos para pantallas móviles (ancho < 768px) */
+@media (max-width: 768px) {
+  .calendar-page-container {
+    flex-direction: column; /* Vertical */
+    align-items: center;
+  }
+}
+
+/* Estilos para el fondo del calendario (negro azulado) */
+.fc .fc-view-harness {
+  background-color: #030f1b; /* Negro azulado */
+}
+
+/* Estilos para las líneas del calendario en gris */
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border-color: #808080; /* Líneas grises */
+}
+
+/* Estilos para los botones de navegación y vista en naranja */
+.fc-button {
+  background-color: #ff4500; /* Naranja chillón */
+  border-color: #ff4500; /* Borde naranja chillón */
+  color: #ffffff; /* Texto blanco para los botones */
+}
+
+.fc-button:hover {
+  background-color: #e63900; /* Naranja más oscuro al pasar el ratón */
+  border-color: #e63900;
+}
+
+.fc-button-primary:not(:disabled).fc-button-active {
+  background-color: #e63900; /* Naranja más oscuro para el botón activo */
+  border-color: #e63900;
+}
+
+/* Asegurar que los botones de navegación y vista también sean naranja */
+.fc-toolbar-chunk .fc-button-group .fc-button {
+  background-color: #ff4500;
+  border-color: #ff4500;
+  color: #ffffff;
+}
+
+.fc-toolbar-chunk .fc-button-group .fc-button:hover {
+  background-color: #e63900;
+  border-color: #e63900;
+}
+
+.fc-toolbar-chunk .fc-button-group .fc-button.fc-button-active {
+  background-color: #e63900;
+  border-color: #e63900;
+}
+
+/* Estilo para el texto del título del calendario */
+.fc-toolbar-title {
+  color: #ffffff; /* Título en blanco */
+}
+
+/* Estilo para la cabecera de los días de la semana */
+.fc-col-header {
+  background-color: #030f1b; /* Fondo negro azulado para la cabecera */
+  border-color: #808080; /* Líneas grises para la cabecera */
+}
+
+/* Estilo para los nombres de los días de la semana */
+.fc-col-header-cell-cushion {
+  color: #ffffff; /* Nombres de los días en blanco */
+}
+
+/* Estilo para los números de los días */
+.fc-daygrid-day-number {
+  color: #ff4500; /* Números de los días en naranja */
+}
+
+/* Estilo para los eventos */
+.fc-event {
+  background-color: #ff4500; /* Fondo de eventos en naranja chillón */
+  border-color: #ff4500; /* Borde de eventos en naranja chillón */
+  color: #ffffff; /* Texto de eventos en blanco */
+}

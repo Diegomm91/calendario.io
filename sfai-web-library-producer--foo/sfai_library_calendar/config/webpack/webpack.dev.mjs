@@ -51,7 +51,7 @@ export const sharedConfig = {
       '@shared': path.resolve(absRootPathLibrary, '../shared'),
       '@sfai_library_mjs': path.resolve(absRootPathLibrary, '../sfai_library_mjs'),
       '@sfai_library_nodejs': path.resolve(absRootPathLibrary, '../sfai_library_nodejs'),
-      '@sfai_library_foo_impl': path.resolve(absRootPathLibrary, 'impl'),
+      '@sfai_library_calendar_impl': path.resolve(absRootPathLibrary, 'impl'),
       images: path.resolve(absRootPathLibrary, 'impl/res/images'),
     },
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.mjs', '.css'],
@@ -103,10 +103,10 @@ const config = {
         library: path.resolve(absRootPathLibrary, 'public/index.tsx')
     },
     output: {
-        filename: 'sfai-library-foo--dev.bundle.js',
+        filename: 'sfai-library-calendar--dev.bundle.js',
         path: path.resolve(absRootPathLibrary, 'dist/dev'),
         publicPath: '/',
-        library: 'SFAI_Library_Foo',
+        library: 'SFAI_Library_calendar',
         libraryTarget: 'umd', // Formato de la librería (opcional)
         globalObject: 'this', // Objeto global para UMD (opcional)
         clean: true,

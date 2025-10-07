@@ -35,6 +35,11 @@
     "@ffmpeg/core": "^0.12.6",
     "@ffmpeg/ffmpeg": "^0.12.10",
     "@ffmpeg/util": "^0.12.1",
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/interaction": "^6.1.15",
+    "@fullcalendar/react": "^6.1.15",
+    "@fullcalendar/timegrid": "^6.1.15",
     "@google-cloud/speech": "^6.6.0",
     "@google-cloud/translate": "^8.3.0",
     "@jest/globals": "^29.7.0",
@@ -82,7 +87,7 @@
     "url": "^0.11.3",
     "util": "^0.12.5",
     "vm-browserify": "^1.1.2",
-    "sfai-library-foo": "file:lib/sfai_library_foo"
+    "sfai-library-calendar": "file:lib/sfai_library_calendar"
   },
   "devDependencies": {
     "@babel/core": "^7.25.8",

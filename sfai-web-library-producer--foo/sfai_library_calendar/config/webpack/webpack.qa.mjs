@@ -47,10 +47,10 @@ const config = merge(commonConfig, {
     library: path.resolve(absRootPathLibrary, 'public/index.tsx')
   },
   output: {
-    filename: 'sfai-library-foo--qa.bundle.js',
+    filename: 'sfai-library-calendar--qa.bundle.js',
     path: path.resolve(absRootPathLibrary, 'dist/qa'),
     publicPath: '/',
-    library: 'SFAI_Library_Foo',
+    library: 'SFAI_Library_calendar', // Nombre de la librería (opcional)
     libraryTarget: 'umd', // Formato de la librería (opcional)
     globalObject: 'this', // Objeto global para UMD (opcional)
     clean: true,
