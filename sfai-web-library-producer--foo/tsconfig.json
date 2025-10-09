@@ -9,7 +9,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "types": ["node", "react", "react-dom", "jest", "react-redux", "webpack"],
+    "types": ["node", "react", "react-dom", "react-redux"],
     "outDir": "./dist",
     "noImplicitAny": true,
     "skipLibCheck": true,
